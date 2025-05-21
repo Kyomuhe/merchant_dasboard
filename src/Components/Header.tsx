@@ -2,7 +2,9 @@ import { useState, useRef, useEffect } from 'react';
 import { Bell, Search, ChevronDown } from 'lucide-react';
 // import NotificationsModal from '../models/notifications'; 
 // import ProfileModal from '../models/profile'; 
-import merchant from '../assets/merchant.PNG'; 
+import profile from '../assets/profile.png';
+
+
 
 // Define TypeScript interfaces
 interface DoctorStats {
@@ -68,10 +70,10 @@ const Header: React.FC<HeaderProps> = ({ isMinimized }) => {
 
   // Doctor data
   const doctorData: Doctor = {
-    name: "Dr. Galanda Wafula Hassan",
-    specialty: "Cardiologist",
-    avatar: merchant,
-    email: "dr.galanda@medicenter.com",
+    name: "Beteise Francis",
+    specialty: "sales person",
+    avatar: profile,
+    email: "beteise@medicenter.com",
     phone: "+254 712 345 678",
     location: "Nairobi Medical Center",
     education: "MD, University of Nairobi • Cardiology Fellowship, Kenyatta Hospital",
@@ -125,7 +127,7 @@ const Header: React.FC<HeaderProps> = ({ isMinimized }) => {
             >
               <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center overflow-hidden">
                 <img
-                  src={merchant}
+                  src={profile}
                   alt="User avatar"
                   className="w-full h-full object-cover"
                 />
